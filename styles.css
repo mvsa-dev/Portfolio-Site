@@ -1,0 +1,85 @@
+/* Simple Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  all: unset; /* optional, resets everything */
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+html,
+body {
+  height: 100%;
+  font-family: system-ui, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.5;
+}
+
+header {
+  width: 100%;
+  background: #131313;
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+nav {
+  display: inline;
+}
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* logo */
+.logo {
+  width: 10%;
+}
+
+.logo span {
+  font-size: 50px;
+}
+.logo {
+}
+
+/* navigation list */
+.nav {
+  width: 40%;
+  font-size: 20px;
+  padding: 20px 0px 0px 0px;
+}
+
+.nav-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.neon-border:hover {
+  box-shadow: 0 0 0 0px #fff, 0 0 1rem #ddd;
+  color: #ffffff;
+}
+
+/* font */
+.bebas-neue {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
