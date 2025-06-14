@@ -1,83 +1,115 @@
-/* Simple Reset */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-a {
-  all: unset; /* optional, resets everything */
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-html,
-body {
-  height: 100%;
-  font-family: system-ui, sans-serif;
-  background-color: #fff;
-  color: #333;
-  line-height: 1.5;
-}
+@media (min-width: 880px) {
+  /* Simple Reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    all: unset; /* optional, resets everything */
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  html,
+  body {
+    height: 100%;
+    font-family: system-ui, sans-serif;
+    background-color: #fff;
+    background-image: url("./beautiful-low-angle-shot-tall-skyscraper.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    line-height: 1.5;
+  }
 
-header {
-  width: 100%;
-  background: #131313;
-  color: #fff;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-nav {
-  display: inline;
-}
-.container {
-  display: flex;
-  flex-flow: column nowrap;
-}
+  nav {
+    display: inline;
+  }
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+  }
 
-/* logo */
-.logo {
-  width: 10%;
-}
+  .header {
+    background: #131313;
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-radius: 7px;
+    margin: 7px;
+  }
 
-.logo span {
-  font-size: 50px;
-}
+  /* logo */
+  .logo {
+    width: 10%;
+  }
 
-/* navigation list */
-.nav {
-  width: 40%;
-  font-size: 20px;
-  padding: 20px 0px 0px 0px;
-}
+  .logo span {
+    font-size: 40px;
+  }
 
-.nav-list {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-}
+  /* navigation list */
+  .nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    font-size: 20px;
+    padding: 0px 0px 0px 0px;
+  }
 
-.neon-border:hover {
-  box-shadow: 0 0 0 0px #fff, 0 0 1rem #ddd;
-  color: #ffffff;
-}
+  .nav-list {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
 
-/* font */
-.bebas-neue {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  .neon-border:hover {
+    box-shadow: 0 0 0 0px #fff, 0 0 1rem #ddd;
+    color: #ffffff;
+  }
 
-.roboto {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+  /* fonts */
+  .bebas-neue {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  ul.nav-list.bebas-neue {
+    font-weight: 100;
+  }
+
+  .roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+  /* hero section */
+  .hero {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin: 100px 0px;
+  }
+
+  .hero-item {
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+  }
 }
