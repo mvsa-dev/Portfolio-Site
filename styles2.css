@@ -1,0 +1,105 @@
+/* Simple Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  all: unset;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+html,
+body {
+  background-image: url("./beautiful-low-angle-shot-tall-skyscraper.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  background: white;
+  border-radius: 12px;
+  color: rgba(255, 255, 255);
+  font-size: 40px;
+  margin: 40px 0px 80px 0px;
+  padding: 0;
+}
+
+main {
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  font-size: 70px;
+}
+
+.btn-hero {
+  border-radius: 12px !important;
+  height: 50px;
+  font-size: 35px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  text-align: center;
+  width: 130px;
+}
+
+/* Background */
+.glass {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.897);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0);
+}
+
+.glass-dark {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+}
+
+.glass-light:hover {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+}
+
+.glass-dark:hover {
+  background: rgba(255, 255, 255, 0.897);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0);
+}
+
+/* fonts */
+.bebas-neue {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
