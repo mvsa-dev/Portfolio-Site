@@ -18,8 +18,9 @@ body {
   background-image: url("./beautiful-low-angle-shot-tall-skyscraper.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
-  overflow: hidden;
+  width: 100%;
 }
 
 nav {
@@ -31,7 +32,7 @@ nav {
   padding: 0;
 }
 
-main {
+div > .hero {
   color: rgb(255, 255, 255);
 }
 
@@ -55,6 +56,11 @@ main {
   padding: 0px !important;
   text-align: center;
   width: 130px;
+}
+
+/* Projects */
+.project {
+  font-size: 15px;
 }
 
 /* Background */
